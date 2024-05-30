@@ -58,7 +58,7 @@ export class CartManager {
       const cartFind = this.cart.find((cart) => cart.id === cartId);
       if (cartFind) {
         const productFind = cartFind.products.find(
-          (product) => product.id === productId
+          (product) => product.productId === productId
         );
         if (!productFind) {
           cartFind.products.push({
@@ -85,7 +85,7 @@ export class CartManager {
 
       if (cartFind) {
         const productFind = cartFind.products.find(
-          (product) => product.id === productId
+          (product) => product.productId === productId
         );
         console.log(productFind);
         if (!productFind) {
@@ -96,7 +96,7 @@ export class CartManager {
           productFind.quantity--;
         } else {
           const indexFind = cartFind.products.findIndex(
-            (product) => product.id === productId
+            (product) => product.productId === productId
           );
           if (indexFind !== -1) {
             cartFind.products.splice(indexFind, 1);
