@@ -12,4 +12,4 @@ En la entrega final del curso de Backend (Parte 1) cuya comisión 69960, se real
 - Vista del carrito desde el botón "Ver carrito" que guarda el id del carrito en sessionStorage.
   ![Vista de Productos](./src/public/images/carrito.JPG)
 - Carrito desde la base de datos, guarda el id de producto pero al utilizar "populate" se pueden desglosar.
-  ![Vista de Productos](./src/public/images/carritodb.JPG)
+  ![Vista de Productos](./src/public/images/carritobd.JPG)
